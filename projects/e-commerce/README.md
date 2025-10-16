@@ -18,12 +18,12 @@
 - Оценка качества данных
 
 ## 📁 Структура проекта
-📁 e-commerce 
-- 📊 sql_scripts
-  📋 documentation
-  💾 data_samples
-  🎨 assets
-  💡 skills
+**e-commerce/**
+- `sql_scripts/` - Пайплайн анализа на SQL
+- `documentation/` - Документация решений
+- `data_samples/` - Примеры данных  
+- `assets/` - Визуализации и дашборды
+- `skills/` - Демонстрация навыков
 
 ## 🚀 Быстрый старт
 1. Изучите `sql_scripts/` для полного пайплайна анализа
