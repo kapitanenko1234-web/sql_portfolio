@@ -19,11 +19,11 @@
 
 ## 📁 Структура проекта
 e-commerce/
-├── sql_scripts/ # Пайплайн анализа на SQL
-├── documentation/ # Документация решений
-├── data_samples/ # Примеры данных
-├── assets/ # Визуализации и дашборды
-└── skills/ # Демонстрация навыков
+├── sql_scripts/          # SQL Analysis Pipeline
+├── documentation/        # Solution Documentation
+├── data_samples/        # Data Samples
+├── assets/              # Visualizations & Dashboards
+└── skills/              # Skills Demonstration
 
 text
 
