@@ -18,8 +18,8 @@
 - Оценка качества данных
 
 ## 📁 Структура проекта
-📁 e-commerce
-  📊 sql_scripts
+📁 e-commerce 
+- 📊 sql_scripts
   📋 documentation
   💾 data_samples
   🎨 assets
