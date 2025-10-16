@@ -11,3 +11,4 @@
 
 ```sql
 ALTER TABLE sales_january RENAME COLUMN "Order ID" TO order_id;
+✅ Применено ко всем 12 таблицам для 6 колонок каждой.
