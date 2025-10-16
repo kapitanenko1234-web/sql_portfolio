@@ -4,22 +4,18 @@
 
 ---
 
-### 1. 🧭 Стандартизация схемы
+### 1. 🧭 Стандартизация схемы данных
 
 **Проблема:** несогласованные названия колонок между файлами.  
 **Решение:** использование стандартизированной конвенции именования для всех таблиц.  
 
 ```sql
 ALTER TABLE sales_january RENAME COLUMN "Order ID" TO order_id;
-🧼 Решения по очистке данных и их обоснование
-📊 Общий пайплайн очистки данных
-1. 🧭 Стандартизация схемы
-
-Проблема: несогласованные названия колонок между файлами.
-Решение: использование стандартизированной конвенции именования для всех таблиц.
-
-```sql
-ALTER TABLE sales_january RENAME COLUMN "Order ID" TO order_id;
+ALTER TABLE sales_january RENAME COLUMN "Product" TO product;
+ALTER TABLE sales_january RENAME COLUMN "Quantity Ordered" TO quantity_ordered;
+ALTER TABLE sales_january RENAME COLUMN "Price Each" TO price_each;
+ALTER TABLE sales_january RENAME COLUMN "Order Date" TO order_date;
+ALTER TABLE sales_january RENAME COLUMN "Purchase Address" TO purchase_address;
 ```
 
 2. 🪣 Удаление строк заголовков
@@ -37,8 +33,10 @@ DELETE FROM sales_march WHERE order_id = 'Order ID';
 Решение: преобразование дат в единый формат `TIMESTAMP` с валидацией.
 
 ```sql
-UPDATE all_sales
-SET order_datetime_clean = TO_TIMESTAMP(order_date, 'MM/DD/YY HH24:MI');
+DELETE FROM sales_march WHERE order_id = 'Order ID';
+DELETE FROM sales_june WHERE order_id = 'Order ID';
+DELETE FROM sales_september WHERE order_id = 'Order ID';
+DELETE FROM sales_december WHERE order_id = 'Order ID';
 ```
 
 4. ✅ Валидация данных
