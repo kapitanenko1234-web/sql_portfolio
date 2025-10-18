@@ -25,7 +25,7 @@
 - `assets/` - Визуализации и дашборды
 - `skills/` - Демонстрация навыков
 
-- ## 📊 Дашборд Power BI
+## 📊 Дашборд Power BI
 - **ecommerce_analysis_dashboard.pbix** - интерактивный дашборд
 - Включает 4 страницы анализа: Business Overview, Product Analysis, Geography, Time Patterns
 
